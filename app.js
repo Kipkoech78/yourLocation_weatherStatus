@@ -12,7 +12,7 @@ app.post("/",function(req,res){
     
 
   query =req.body.cityName;
-  appid= "a73f36cc07bf4eecd8165ff6855f2b27";
+  appid= "a73f36cc07bf4eecd8165ff6855f2b27-bug";
   units= "metric";
 
 const url= "https://api.openweathermap.org/data/2.5/weather?q="+query +"&appid=" +appid+"&units="+ units;
@@ -38,7 +38,8 @@ https.get(url, function(response){
 
 
 })
-
+//add -bug
+// hello world
 
 app.listen(3000, function(){
     console.log("the server is running on port 3000");
